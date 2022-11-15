@@ -7,7 +7,11 @@
     <meta name="viewport" content="width=device-width" />
     <title>Jonathan Mangone</title>
     <link rel="stylesheet" type="text/css" href="css/portfolio.css">
-    
+    <link rel="shortcut icon" type="img/jpg" href="img/coding_icon.png">
+
+    <!--Script-->
+    <script src="./js/navbar.js" defer></script>
+    <script src="./js/main.js" defer></script>
 </head>
 
 <!--Body-->
@@ -15,18 +19,29 @@
 <body class="Background">
 
     <!--Navbar-->
-    
-    <div id="navid" class="Navbar" >
+    <div id="mini-nav">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
+
+    <div id="navid" class="Navbar">
         <a class="menu-item active" href="#Home">Home</a>
+        <a href="#Slideshow">Slideshow</a>
         <a class="menu-item" href="#About">About</a>
         <a class="menu-item" href="#GitHub">GitHub</a>
-        <a class="menu-item" href="#Contact">Contact</a>
+        <!--Click event calls open and close form-->
+        <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
     </div>
-    <script src="./js/navbar.js"></script>
 
-    <!--Breaks inserted to add space between navbar and the first heading-->
-    <br>
-    <br>
+    <!--Sidenav-->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class="menu-item active" href="#Home">Home</a>
+        <a href="#Slideshow">Slideshow</a>
+        <a class="menu-item" href="#About">About</a>
+        <a class="menu-item" href="#GitHub">GitHub</a>
+        <!--Click event calls open and close form-->
+        <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
+      </div>
 
     <!--Background video-->
     <div id="Home">
@@ -49,13 +64,68 @@
                 </q>
                 <br> -Joseph Weizenbaum
                 <br>
-                <br> My name is Jonathan Mangone. Welcome to my portfolio website. On it, I will tell you about my background and
+                <br> My name is Jonathan Mangone. Welcome to my portfolio website. On it, I will tell you about my
+                background and
                 experience.
                 <br>
                 <br> Thank you for stopping by and enjoy!
             </p>
         </strong>
     </div>
+<div id="main">
+    <!--Slideshow-->
+    <div id="Slideshow">
+        <div class="Slideshow_Background">
+            <div id="Slideshow_Container">
+                <!--Slide 1 of 6-->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="img/Picture_of_You.jpg" alt="Picture of Jonathan">
+                    <div class="text">I'm available to assist you on your project!</div>
+                </div>
+                <!--Slide 2 of 6-->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="img/HTML_CSS_and_JavaScript.jpeg" alt="HTML, CSS, and JS logos">
+                    <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,
+                    </div>
+                </div>
+                <!--Slide 3 of 6-->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="img/Python.png" alt="Python logo">
+                    <div class="text">the popular programming language Python,</div>
+                </div>
+                <!--Slide 4 of 6-->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="img/C_Sharp_and_Dot_NET.png" alt="C# logo">
+                    <div class="text"></div>
+                </div>
+                <!--Slide 5 of 6-->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="img/SQL_and_Database.jpg" alt="SQL logo">
+                    <div class="text"></div>
+                </div>
+                <!--Slide 6 of 6-->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="Square_Custom_Picture.png" alt="">
+                    <div class="text"><a class="white-text contact" onclick="openForm()">Contact me now!</a></div>
+                </div>
+                <!-- Slideshow nav buttons -->
+                <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br> <!-- Adds spacing between the slideshow images and the dots -->
+
+            <!-- Slideshow dots (dual functionality as buttons to navigate slideshow) -->
+            <div style="text-align: center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+        </div>
+    </div>
+    <!--End Slideshow-->
 
     <!--About section-->
     <div class="Row" id="About">
@@ -67,7 +137,7 @@
         <div class="Column_1">
             <h1>About</h1>
             <p>
-                I am a software developer who loves to code! As a father of one, I enjoy time with my family and
+                I am a software developer who loves to code! As a step-dad of one, I enjoy time with my family and
                 traveling.
                 <br>
                 <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech
@@ -79,6 +149,8 @@
             </p>
         </div>
     </div>
+
+    
 
     <!--GitHub section-->
     <div class="Row" id="GitHub">
@@ -94,33 +166,33 @@
         </div>
         <!--Right column-->
         <div class="Column_2">
-            <a href="https://github.com/DevSciCloan" target="_blank"><img src="img/GitHub.png"
-                    alt="GitHub Logo"></a>
+            <a href="https://github.com/DevSciCloan" target="_blank"><img src="img/GitHub.png" alt="GitHub Logo"></a>
         </div>
     </div>
 
+    
     <!--Contact section-->
-    <div class="Row" id="Contact">
-        <!--Contact image, left column-->
-        <div class="Column_2 Column_tall">
-            <img src="img/html_custom_1.jpg" alt="Contact_Image">
-        </div>
-        <!--Contact form, right column-->
-        <div class="Column_1 Column_tall">
-            <h1>Contact</h1>
-            <!--This specifies where and how to send the form data; we are leaving it blank-->
-            <form action="" method="POST">
-                <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
-                <label>Name:</label>
-                <input type="text" placeholder="Please enter your name here">
-                <label>Email:</label>
-                <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
-                <label>Message:</label>
-                <input type="text" id="Message" name="Message" placeholder="Please write your message here">
-                <input type="submit" value="SUBMIT">
+    <!--Contact Form-->
+    <div id="Contact">
+        <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+        <div class="form-popup" id="myForm">
+            <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container">
+                <h1>Contact</h1>
+                <label for="name"><b>Name</b></label>
+                <input type="text" placeholder="Full name..." name="name" required>
+                <label for="phone"><b>Phone</b></label>
+                <input type="text" placeholder="(***)***-****" name="phone">
+                <label for="email"><b>Email</b></label>
+                <input type="email" placeholder="email@domain.com" name="email" required>
+                <label for="message"><b>Message</b></label>
+                <input type="text" placeholder="Type message here..." name="message">
+
+                <button type="submit" class="btn">SUBMIT</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
             </form>
         </div>
     </div>
+ 
 
     <!--Footer section-->
     <footer>
@@ -130,6 +202,7 @@
         <br>
         </p>
     </footer>
+</div> 
 </body>
 
 </html>
