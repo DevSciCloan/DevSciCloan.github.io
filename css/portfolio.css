@@ -10,7 +10,7 @@ body {
   letter-spacing: .2vw;
   font-family: Avant Garde, Helvetica;
   font-size: 1.5vw;
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
   user-select: none;
 }
 
@@ -86,7 +86,8 @@ img {
   filter: grayscale(75%); /* This rids our pictures of 75% of their color */
   border-radius: 8px; /* Gives all images slightly rounded corners */
   max-width: 100%; /* Ensures all images stay within the width of their container */
-  height: 340px; /* Sets the height of all images */
+  /*height: 340px; Sets the height of all images */
+  max-height: 100%;
   display: block; /* By specifying block display we can ensure our images are able to be centered */
   margin-left: auto; /* In combination with "margin-right: auto" this centers all images */
   margin-right: auto;
@@ -105,8 +106,8 @@ img:hover {
 /* On screens 576px and smaller the images will be 100px tall and centered vertically in the column */
 @media screen and (max-width: 576px) {
   img {
-    height: 100px;
-    margin-top: 150px;
+    /*height: 100px;
+    margin-top: 150px;*/
   }
 }
 
@@ -258,6 +259,7 @@ footer {
   #Typing_Video {
     display: none;
   }
+  
 }
 
 /* Texts over the video */
@@ -274,6 +276,18 @@ footer {
   position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below */
   -webkit-animation: moveVideoText 5.75s;
   animation: moveVideoText 5.75s;
+}
+
+@media screen and (max-width: 576px) {
+  .Video_Text {
+    background: rgba(0, 0, 0, 0.749);
+  }
+  #dots {
+    display: none;
+  }
+  #Slideshow {
+    margin-bottom: 4rem;
+  }
 }
 
 /* This animation effect causes the overlay video text to move up from the bottom of the page upon page load */
@@ -437,6 +451,7 @@ footer {
 
 .Row {
     background-color: whitesmoke;
+    overflow: hidden;
 }
 
 /* This inserts something after the content of selected elements (in this case the elements with class "Row") */
@@ -444,6 +459,7 @@ footer {
   content: ""; /* By leaving this blank, we are allowing the footer (covered lower down) to be displayed - removing it makes the footer overwrite a column */
   display: table; /* The display property specifies the type of display behavior; the table value tells the browser to treat the element as a table */
   clear: both; /* This clears any other elements from floating on the left or the right of an element */
+  
 }
 /***** END OF TABLE STYLING *****/
 
@@ -575,7 +591,10 @@ button:hover, .form-container .btn:hover {
   p {
       font-size: 2.25vw;
   }
+  
 }
+
+
 
 @media screen and (min-width: 1051px) and (max-width: 1310px) {
   p {
@@ -589,6 +608,23 @@ button:hover, .form-container .btn:hover {
   }
 }
 
+@media screen and (max-width: 1311px) {
+  .form-container, .form-popup {
+    max-width: 100%;
+    font-size: larger;
+  }
+}
+
+
+@media screen and (min-width: 1311px) {
+  .Pop_Up_Button {
+    max-width: 270px;
+    max-height: 70px;
+    padding: 20px;
+    font-size: 15.6px;
+  }
+}
+
 @media screen and (min-width: 1536px) and (max-width: 2269px) {
   p {
       font-size: 1.5vw;
@@ -597,7 +633,68 @@ button:hover, .form-container .btn:hover {
 
 @media screen and (min-width: 2270px) {
   p {
-      font-size: 1.35vw;
+      font-size: 1.15vw;
+  }
+  .Row {
+    padding-left: 15%;
+    padding-right: 15%;
+    background-color: transparent;
+    min-height: 430px;
+  }
+  img {
+    width:auto;
+    height: 100%;
+  }
+  div > h1 {
+    font-size: smaller;
+  }
+  .Slideshow_Images, div.mySlides,div#Slideshow_Container {
+    max-height: 960px;
+    max-width: 830px;
+  }
+  div.text {
+    max-width: 830px;
+    font-size: 33px;
+    position: absolute;
+  }
+  .form-container, .form-popup {
+    max-width: 1100px;
+    font-size: medium;
+  }
+
+  .form-container > label {
+    font-size: larger;
+    letter-spacing: .1vw;
+  }
+
+  .form-container > input {
+    font-size: smaller;
+  }
+
+  .form-popup input[type=text], input[type=email] {
+    font-size: .8vw;
+  }
+}
+
+
+@media screen and (min-width: 2450px) {
+  p {
+      font-size: 1vw;
+  }
+  
+  .Column_2 > img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .form-container, .form-popup {
+    height: 702px;
+    font-size: x-large;
+  }
+  .form-container input[type=text], input[type=email] {
+    font-size: medium;
   }
 }
 
@@ -618,6 +715,7 @@ button:hover, .form-container .btn:hover {
 
   .white-text {
       font-size: 4.5vw;
+      margin-top: 4.5vw;
   }
 }
 
