@@ -17,21 +17,32 @@ function openNav() {
   document.getElementById("mySidenav").style.display = "block";
   document.getElementById("mySidenav").style.width = "250px";
   document.getElementById("main").style.marginLeft = "250px";
+  document.getElementById("mini-nav").style.display = "none";
 }
 
 function closeNav() {
   document.getElementById("mySidenav").style.display = "none";
   document.getElementById("main").style.marginLeft= "0";
+  if (document.documentElement.scrollTop < 80) {
+    document.getElementById("mini-nav").style.display = "none";
+  } else {
+    document.getElementById('mini-nav').style.display = 'block';
+  }
 }
 
 
 window.onscroll = function() {
   if (document.documentElement.scrollTop < 80) {
-    document.getElementById("navid").style.display = 'block';
-    document.getElementById('mini-nav').style.display = 'none';
     closeNav();
+    document.getElementById("navid").style.display = 'block';
   } else {
     document.getElementById("navid").style.display = "none";
-    document.getElementById('mini-nav').style.display = 'block';
+    if (document.getElementById('mySidenav').style.display == 'block'){
+
+      document.getElementById("mini-nav").style.display = "none";    
+    } else {
+      document.getElementById('mini-nav').style.display = 'block';
+    }
+    
   }
 }
