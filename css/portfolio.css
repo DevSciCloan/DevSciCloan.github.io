@@ -114,7 +114,6 @@ img:hover {
 /* Styling for footer element */
 footer {
   padding: 2%; /* This gives the footer padding that is equal to 2% of the width of the element's area */
-  background-color: white;
 }
 /***** END OF GENERAL STYLING *****/
 
@@ -450,7 +449,7 @@ footer {
 }
 
 .Row {
-    background-color: whitesmoke;
+    
     overflow: hidden;
 }
 
