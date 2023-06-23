@@ -36,14 +36,13 @@ h1:hover {
 }
 
 /* Styling for portfolio title text */
-.white-text {
+.White-text {
   color: #fff; /* This is used to change the color of the portfolio title text */
 }
 
 /* Paragraph elements */
 p {
   font-family: Perpetua, Rockwell Extra Bold;
-  text-align: justify; /* Justify text within paragraph elements */
   letter-spacing: 1px; /* This expands the text slightly */
   font-size: 20px;
   padding-left: 20px; /* Adds padding to the left of the paragraph element */
@@ -192,6 +191,15 @@ footer {
   top:2rem;
   left: 2rem;
   z-index: 1090;
+  border: 2px solid black;
+  padding-left: .7rem;
+  padding-right: .5rem;
+  background-color: white;
+}
+
+#mini-nav:hover {
+  box-shadow: 0 0 10px aliceblue;
+  text-shadow: 0 0 4px gray;
 }
 
 .sidenav {
@@ -205,6 +213,7 @@ footer {
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  
 }
 
 .sidenav a {
@@ -393,7 +402,7 @@ footer {
 }
 
 /* Fading animation for slideshow */
-.fade {
+.Fade {
   animation-name: fade; /* Fade animation is defined below */
   animation-duration: 1.5s; /* The animation lasts 1.5 seconds */
   -webkit-animation-name: fade; /* Same as above for Safari 4.0-8.0 */
@@ -420,8 +429,8 @@ footer {
 .Column_1 {
   float: left;
   width: 50%; /* This ensures the column takes up half of the page width */
-  /*padding: 10px;
-  padding-top: 3%;  This ensures there is space between the top of the column and our headings */
+  padding: 1rem;
+  
   height: 400px; /*This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
   background-color: whitesmoke; /* Sets the background color of the columns with class Column_1 */
 }
@@ -436,10 +445,9 @@ footer {
 .Column_2 {
   float: left;
   width: 50%;
-  /*padding: 10px;
-  padding-top: 1.9%;*/
+  padding: 1rem;
   height: 400px;
-  background-color: whitesmoke;;
+  background-color: transparent;
 }
 
 /* This class is applied to the columns in the final row, overriding the height and padding to provide more room for the contact form  while keeping the rest of the formatting from Column_1 or Column_2 */
@@ -448,18 +456,28 @@ footer {
   height: 450px;
 }
 
+.GitColumn 
+{
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
 .Row {
     background-color: whitesmoke;
     overflow: hidden;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-radius: .25rem;
+    border: 2px solid black;
 }
 
 /* This inserts something after the content of selected elements (in this case the elements with class "Row") */
-.Row:after {
+ .Row:after {
   content: ""; /* By leaving this blank, we are allowing the footer (covered lower down) to be displayed - removing it makes the footer overwrite a column */
-  display: table; /* The display property specifies the type of display behavior; the table value tells the browser to treat the element as a table */
-  clear: both; /* This clears any other elements from floating on the left or the right of an element */
-  
-}
+  display: table;  /*The display property specifies the type of display behavior; the table value tells the browser to treat the element as a table */
+  clear: both;  /*This clears any other elements from floating on the left or the right of an element */
+  background-color: whitesmoke;
+} 
 /***** END OF TABLE STYLING *****/
 
 /***** Contact Form Styling *****/
@@ -528,8 +546,8 @@ button {
 
 /* Hover effect for contact and submit buttons */
 button:hover, .form-container .btn:hover {
-  color: white; /* This makes the text in the buttons white when hovered over */
-  background-color: black; /* The background of the button changes to black when hovered over */
+  color: rgb(0, 0, 0); /* This makes the text in the buttons white when hovered over */
+  background-color: rgb(13, 151, 0); /* The background of the button changes to black when hovered over */
   transition-duration: 1s; /* This makes the transition last 1 second */
   -webkit-transition-duration: 1s; /* For Safari 4.0-8.0 */
   border-color: silver; /* The border turns silver when the button is hovered over */
@@ -557,6 +575,10 @@ button:hover, .form-container .btn:hover {
   transition-duration: 1s;
   -webkit-transition-duration: 1s;
   border-color: black;
+}
+
+.contact:hover {
+  cursor: pointer;
 }
 /***** End of Contact Form Styling *****/
 
@@ -637,16 +659,14 @@ button:hover, .form-container .btn:hover {
   .Row {
     padding-left: 15%;
     padding-right: 15%;
-    background-color: transparent;
     min-height: 430px;
+    display: flex;
   }
   img {
     width:auto;
     height: 100%;
   }
-  div > h1 {
-    font-size: smaller;
-  }
+  
   .Slideshow_Images, div.mySlides,div#Slideshow_Container {
     max-height: 960px;
     max-width: 830px;

@@ -8,6 +8,7 @@
     <title>Jonathan Mangone</title>
     <link rel="stylesheet" type="text/css" href="css/portfolio.css">
     <link rel="shortcut icon" type="img/jpg" href="img/coding_icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
     <!--Script-->
     <script src="./js/navbar.js" defer></script>
@@ -33,7 +34,7 @@
     </div>
 
     <!--Sidenav-->
-    <div id="mySidenav" class="sidenav">
+    <div id="mySidenav" class="sidenav" >
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a class="menu-item active" href="#Home">Home</a>
         <a href="#Slideshow">Slideshow</a>
@@ -54,7 +55,7 @@
 
     <!--Video text-->
     <div class="Video_Text">
-        <h1 class="white-text">Jonathan's Portfolio</h1>
+        <h1 class="White-text" style="margin-top: 3rem;">Jonathan's Portfolio</h1>
         <strong>
             <p class="center">
                 <q>The computer programmer is a creator of universes for which he alone is the lawgiver.
@@ -78,41 +79,41 @@
         <div class="Slideshow_Background">
             <div id="Slideshow_Container">
                 <!--Slide 1 of 7-->
-                <div class="mySlides fade">
+                <div class="mySlides Fade">
                     <img class="Slideshow_Images" src="img/Profile_Picture.jpg" alt="Picture of Jonathan">
-                    <div class="text">I'm available to assist you on your project!</div>
+                    <div class="text">I'M AVAILABLE TO ASSIST WITH YOUR PROJECT!</div>
                 </div>
                 <!--Slide 2 of 7-->
-                <div class="mySlides fade">
+                <div class="mySlides Fade">
                     <img class="Slideshow_Images" src="https://unity.com/themes/contrib/unity_base/images/og.jpg" alt="Unity Logo">
-                    <div class="text">I am a Game Programmer,<br> trained in:<br>Unity with C#
+                    <div class="text">I AM A GAME PROGRAMMER TRAINED IN:<br>UNITY WITH C#
                     </div>
                 </div>
                 <!--Slide 3 of 7-->
-                <div class="mySlides fade">
+                <div class="mySlides Fade">
                     <img class="Slideshow_Images" src="img/HTML_CSS_and_JavaScript.jpeg" alt="HTML, CSS, and JS logos">
-                    <div class="text">Former full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript, Java, C#, and...
+                    <div class="text">FORMER SOFTWARE DEVELOPER TRAINED IN:<br>HTML, CSS, JavaScript, Java, C#, and...
                     </div>
                 </div>
                 <!--Slide 4 of 7-->
-                <div class="mySlides fade">
+                <div class="mySlides Fade">
                     <img class="Slideshow_Images" src="img/Python.png" alt="Python logo">
-                    <div class="text">the popular programming language Python</div>
+                    <div class="text">THE POPULAR PROGRAMMING LANGUAGE: <br>PYTHON</div>
                 </div>
                 <!--Slide 5 of 7-->
-                <div class="mySlides fade">
+                <div class="mySlides Fade">
                     <img class="Slideshow_Images" src="img/C_Sharp_and_Dot_NET.png" alt="C# logo">
                     <div class="text">ASP.NET Core/Framework MVC, Azure</div>
                 </div>
                 <!--Slide 6 of 7-->
-                <div class="mySlides fade">
+                <div class="mySlides Fade">
                     <img class="Slideshow_Images" src="img/SQL_and_Database.jpg" alt="SQL logo">
                     <div class="text">SQLite, MySQL, Procedures, and more!</div>
                 </div>
                 <!--Slide 7 of 7-->
-                <div class="mySlides fade">
+                <div class="mySlides Fade">
                     <img class="Slideshow_Images" src="img/Square_Custom_Picture.png" alt="Contact image">
-                    <div class="text" onclick="openForm()" style="cursor: pointer;"><a class="white-text contact">Contact me now!</a></div>
+                    <a class="white-text contact"><div class="text" onclick="openForm()" style="cursor: pointer;">Contact me now!</div></a>
                 </div>
                 <!-- Slideshow nav buttons -->
                 <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
@@ -135,15 +136,44 @@
     <!--End Slideshow-->
 
     <!--About section-->
+    <div class="Row" id="About">
+        
+        <!--Right column-->
+        <div class="p-3">
+            <h2 class="center">About</h2>
+            <p>
+                I am a former Software Developer, now Game Programmer, who loves to code! My passion is Game Development. 
+                <br>From an early age I was fascinated 
+                by code. I began by self teaching Web Development at age 12 using various online resources to create websites for book reports and small businesses.
+                I had my sights set on becoming a "Programmer" until I started college. I had no idea how many languages and areas of expertise were out there.
+                <br>I am now working for <a href="https://www.linkedin.com/company/p1om/" target="_blank" >P1-OM</a> as a Volunteer Game Programmer.
+                <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech 
+                Academy</a>’s Software Developer Boot Camp and a graduate of <a href="http://www.slcc.edu/">Salt Lake Community College</a>.<br>I am trained and experienced in the following web and
+                programming languages:<br>HTML, CSS, JavaScript, SQL, C#, Python and more.
+                <br>
+                <br>I am searching for a paid position and would love to work with you on your project. Feel free to <a
+                    href="#Contact">Contact</a> me anytime!
+            </p>
+        </div>
+    </div>
+
+    <!--About section-->
     <div class="Row" id="ScarlettsGame">
         <!--Left column-->
-        <div class="Column_2" style = "background-color: whitesmoke;background-image: url('https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_itch_itchio_S1_2560x1440-1f57f016693b447e7759918f54aea344');background-size: contain;background-repeat: no-repeat;background-position: center;">
-            <div>
-                <h2 class="center" style="color: whitesmoke;text-shadow:0px 0px 5px black;">Scarlett's Game</h2>
-                <p class="center">
-                    <a href="https://nojellynolife.itch.io/scarletts-game" target="_blank" style="text-shadow:0px 0px 10px whitesmoke;background-color: white;">Download Scarlett's Game on Itch.io</a>
-                </p>
-            </div>
+        <div class="Column_2 d-flex align-items-center justify-content-md-center">
+            
+
+            <div class="card " style="background-color: rgba(255, 255, 255, 0.34);">
+                <div class="card-header">
+                    In Development
+                    
+                </div>
+                <div class="card-body" >
+                  <h5 class="card-title">Scarlett's Game</h5>
+                  <p class="card-text">3D platformer game built in Unity.<br>Cosmetic customization rewards.<br>Obstacle courses.<br>Exploration.</p>
+                  <a href="https://nojellynolife.itch.io/scarletts-game" class="btn btn-primary">Download on Itch.io</a>
+                </div>
+              </div>
             
             
         </div>
@@ -160,59 +190,10 @@
         </div>
     </div>
 
-    <!--About section-->
-    <div class="Row" id="About">
-        <!--Left column-->
-        <div class="Column_2">
-            <iframe  
-                style="width:100%;height:100%;"
-                src="https://www.youtube-nocookie.com/embed/lpbcBaNyjKI" 
-                title="YouTube video player" frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                allowfullscreen>
-            </iframe>
-        </div>
-        <!--Right column-->
-        <div class="Column_1" style="overflow-y: scroll; overflow-x: hidden;">
-            <h2 class="center">About</h2>
-            <p>
-                I am a former Software Developer, now Game Programmer, who loves to code! My passion is Game Development. From an early age I was fascinated 
-                by code. I began by self teaching Web Development at age 12 using various online resources to create websites for book reports and small businesses.
-                I had my sights set on becoming a "Programmer" until I started college. I had no idea how many languages and areas of expertise were out there.
-                I am now working for <a href="https://www.linkedin.com/company/p1om/" target="_blank" >P1-OM</a> as a Volunteer Game Programmer.
-                <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech
-                    Academy</a>’s Software Developer Boot Camp and a graduate of <a href="http://www.slcc.edu/">Salt Lake Community College</a>. I am trained and experienced in the following web and
-                programming languages: HTML, CSS, JavaScript, SQL, C#, Python and more.
-                <br>
-                <br>I am searching for a paid position and would love to work with you on your project. <a
-                    href="#Contact">Contact</a> me below!
-            </p>
-        </div>
-    </div>
-
-    
-
-    <!--GitHub section-->
-    <div class="Row" id="GitHub">
-        <!--Left column-->
-        <div class="Column_1">
-            <h1>GitHub</h1>
-            <p class="center">
-                You can view my personal projects on my GitHub profile here:
-                <br>
-                <a href="https://github.com/DevSciCloan" target="_blank" class="center">DevSciCloan Github</a>
-            </p>
-        </div>
-        <!--Right column-->
-        <div class="Column_2" style="background-color: whitesmoke;">
-            <a href="https://github.com/DevSciCloan" target="_blank"><img src="img/GitHub.png" alt="GitHub Logo" style="max-height: 410px;"></a>
-        </div>
-    </div>
-
     <!--Particle Path section-->
     <div class="Row" id="ParticlePath">
         <!--Left column-->
-        <div class="Column_1">
+        <div class="Column_1 d-flex GitColumn">
             <h1>Tutorial Objective Particle Path</h1>
             <p class="center">
                 <a href="https://www.linkedin.com/company/p1om/" target="_blank">
@@ -232,6 +213,23 @@
                 allowfullscreen>
             </iframe>
 
+        </div>
+    </div>
+
+    <!--GitHub section-->
+    <div class="Row" id="GitHub">
+        <!--Left column-->
+        <div class="Column_1 d-flex GitColumn">
+            <h1>GitHub</h1>
+            <p class="center">
+                You can view some of my personal projects on my GitHub profile here:
+                <br>
+                <a href="https://github.com/DevSciCloan" target="_blank" class="center">DevSciCloan Github</a>
+            </p>
+        </div>
+        <!--Right column-->
+        <div class="Column_2 d-flex GitColumn" style="background-color: whitesmoke;">
+            <a href="https://github.com/DevSciCloan" target="_blank"><img src="img/GitHub.png" alt="GitHub Logo" style="max-height: 410px;"></a>
         </div>
     </div>
     
@@ -263,8 +261,8 @@
     <!--Footer section-->
     <footer class="Row">
         <p>
-        <p class="center" >&copy Jonathan Mangone, <a href="www.linkedin.com/in/jonathan-mangone"
-                    target="_blank">Linkedin</a>,
+        <p class="center" >&copy Jonathan Mangone, <a href="https://www.linkedin.com/in/jonathan-mangone/"
+                    target="_blank">LinkedIn</a>,
                 <a href="https://docs.google.com/document/d/1rNBEAF-Zxcnknmn4aCx4UTdm27MMUZ2AsUFQ-bjzVVM/edit?usp=sharing"
                     target="_blank">Resume</a>
             </p>
