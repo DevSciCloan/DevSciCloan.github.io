@@ -20,17 +20,17 @@
 <body class="Background">
 
     <!--Navbar-->
-    <div id="mini-nav">
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <div id="mini-nav" style="cursor:pointer;" onclick="openNav()">
+        <span style="font-size:30px;">&#9776;</span>
     </div>
 
     <div id="navid" class="Navbar">
         <a class="menu-item active" href="#Home">Home</a>
-        <a href="#Slideshow">Slideshow</a>
+        <a class="menu-item" href="#Slideshow">Slideshow</a>
         <a class="menu-item" href="#About">About</a>
         <a class="menu-item" href="#GitHub">GitHub</a>
         <!--Click event calls open and close form-->
-        <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
+        <a class="contact" href="#Contact">Contact</a>
     </div>
 
     <!--Sidenav-->
@@ -41,7 +41,7 @@
         <a class="menu-item" href="#About">About</a>
         <a class="menu-item" href="#GitHub">GitHub</a>
         <!--Click event calls open and close form-->
-        <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
+        <a class="contact" href="#Contact">Contact</a>
       </div>
 
     <!--Background video-->
@@ -55,21 +55,10 @@
 
     <!--Video text-->
     <div class="Video_Text">
-        <h1 class="White-text" style="margin-top: 3rem;">Jonathan's Portfolio</h1>
+        <h1 class="White-text" style="margin-top: 3rem;">Jonathan Mangone</h1>
         <strong>
             <p class="center">
-                <q>The computer programmer is a creator of universes for which he alone is the lawgiver.
-                    <br>No playwright, no stage director, no emperor, however powerful, has ever exercised such absolute
-                    authority to arrange a stage or
-                    <br>field of battle and to command such unswervingly dutiful actors or troops.
-                </q>
-                <br> -Joseph Weizenbaum
-                <br>
-                <br> My name is Jonathan Mangone. Welcome to my portfolio website. On it, I will tell you about my
-                background and
-                experience.
-                <br>
-                <br> Thank you for stopping by and enjoy!
+                Thank you for stopping by and enjoy!
             </p>
         </strong>
     </div>
@@ -81,7 +70,6 @@
                 <!--Slide 1 of 7-->
                 <div class="mySlides Fade">
                     <img class="Slideshow_Images" src="img/Profile_Picture.jpg" alt="Picture of Jonathan">
-                    <div class="text">I'M AVAILABLE TO ASSIST WITH YOUR PROJECT!</div>
                 </div>
                 <!--Slide 2 of 7-->
                 <div class="mySlides Fade">
@@ -113,7 +101,7 @@
                 <!--Slide 7 of 7-->
                 <div class="mySlides Fade">
                     <img class="Slideshow_Images" src="img/Square_Custom_Picture.png" alt="Contact image">
-                    <a class="white-text contact"><div class="text" onclick="openForm()" style="cursor: pointer;">Contact me now!</div></a>
+                    <a class="white-text contact" href="#Contact"><div class="text" style="cursor: pointer;">CLICK HERE!</div></a>
                 </div>
                 <!-- Slideshow nav buttons -->
                 <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
@@ -144,28 +132,27 @@
             <!--Right column-->
             <div class="p-3">
                 <h2 class="center">About</h2>
-                <p>
+                <p class="user-select">
                     I am a former Software Developer, now Game Programmer, who loves to code! My passion is Game Development. 
-                    <br>From an early age I was fascinated 
-                    by code. I began by self teaching Web Development at age 12 using various online resources to create websites for book reports and small businesses.
-                    I had my sights set on becoming a "Programmer" until I started college. I had no idea how many languages and areas of expertise were out there.
+                    <br>I began by self teaching Web Development at an early age using various online resources to create websites for book reports and small businesses.
+                    
                     <br>I am now working for <a href="https://www.linkedin.com/company/p1om/" target="_blank" >P1-OM</a> as a Volunteer Game Programmer.
                     <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech 
                     Academy</a>’s Software Developer Boot Camp and a graduate of <a href="http://www.slcc.edu/">Salt Lake Community College</a>.<br>I am trained and experienced in the following web and
                     programming languages:<br>HTML, CSS, JavaScript, SQL, C#, Python and more.
                     <br>
-                    <br>I am searching for a paid position and would love to work with you on your project. Feel free to <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a> me anytime!
+                    <br>I am searching for a full time position and would love to work with you on your project. Feel free to <a class="contact">Contact</a> me!
                 </p>
             </div>
         </div>
 
         <!--About section-->
-        <div class="row" id="ScarlettsGame">
+        <div class="row align-flex-center" id="ScarlettsGame">
             <!--Left column-->
             <div class="col">
                 
 
-                <div class="card " style="background-color: rgba(255, 255, 255, 0.34);">
+                <div class="card" style="background-color: rgba(255, 255, 255, 0.34);">
                     <div class="card-header">
                         In Development
                         
@@ -180,7 +167,7 @@
                 
             </div>
             <!--Right column-->
-            <div class="col">
+            <div class="col embed-height">
                 <iframe 
                     style="width:100%;height:100%;" 
                     src="https://www.youtube-nocookie.com/embed/QLgQcqOP6PE" 
@@ -193,20 +180,23 @@
         </div>
 
         <!--Particle Path section-->
-        <div class="row" id="ParticlePath">
+        <div class="row align-flex-center" id="ParticlePath">
             <!--Left column-->
             <div class="col">
-                <h1>Tutorial Objective Particle Path</h1>
+                <h2 class="center">Tutorial Objective Particle Path</h2>
+                <br>
                 <p class="center">
-                    <a href="https://www.linkedin.com/company/p1om/" target="_blank">
-                        <img src="https://media.licdn.com/dms/image/C560BAQFPf4631OgMzA/company-logo_200_200/0/1650656487142?e=1695254400&v=beta&t=yoOMA5tslyLsvO83o-ODIGRjtvGpau-ms2ikHcDkq3s"/>
-                    </a>
+                    Here I created a particle system that draws a path from the player's position to the current tutorial objective.
                     <br>
-                    People First Open Metaverse <a href="https://www.linkedin.com/company/p1om/" target="_blank">LinkedIn</a>
+                    <br>
+                    <p class="center"><span style="font-weight: bold; "><a href="https://www.reddit.com/r/SkyJellies/" target="_blank" style="text-decoration-line: none;">Sky Jellies</a></span> by People First Open Metaverse 
+                        <br>
+                        <a href="https://www.linkedin.com/company/p1om/" target="_blank" style="text-decoration-line: none;">LinkedIn</a>
+                    </p>
                 </p>
             </div>
             <!--Right column-->
-            <div class="col">
+            <div class="col embed-height">
                 <iframe 
                     style="width:100%;height:100%;" 
                     src="https://www.youtube-nocookie.com/embed/yljZcqiVQ7E" 
@@ -219,7 +209,7 @@
         </div>
 
         <!--Othello section-->
-        <div class="row" id="Othello">
+        <div class="row align-flex-center" id="Othello">
             <div class="col">
                 
 
@@ -237,7 +227,7 @@
                 
             </div>
             <!--Right column-->
-            <div class="col">
+            <div class="col embed-height">
                 <iframe 
                     style="width:100%;height:100%;" 
                     src="https://www.youtube-nocookie.com/embed/xNpsxZdaHpU" 
@@ -250,7 +240,7 @@
         </div>
 
         <!--Snake section-->
-        <div class="row" id="Snake">
+        <div class="row align-flex-center" id="Snake">
             <div class="col">
                 
 
@@ -268,7 +258,7 @@
                 
             </div>
             <!--Right column-->
-            <div class="col">
+            <div class="col embed-height">
                 <iframe 
                     style="width:100%;height:100%;" 
                     src="https://www.youtube-nocookie.com/embed/tOif2uxGkmI" 
@@ -281,7 +271,7 @@
         </div>
 
         <!--Target throw section-->
-        <div class="row" id="TargetThrow">
+        <div class="row align-flex-center" id="TargetThrow">
             <!--Left column-->
             <div class="col">
                 <h1>Target Indicator: Pickup & Throw</h1>
@@ -292,11 +282,11 @@
                         />
                     </a>
                     <br>
-                    Pickup and throw system for Game Jam game.
+                    Pickup and throw system for a game.
                 </p>
             </div>
             <!--Right column-->
-            <div class="col">
+            <div class="col embed-height">
                 <iframe 
                     style="width:100%;height:100%;" 
                     src="https://www.youtube-nocookie.com/embed/lpbcBaNyjKI" 
@@ -309,9 +299,9 @@
         </div>
 
         <!--GitHub section-->
-        <div class="row" id="GitHub">
+        <div class="row align-flex-center" id="GitHub">
             <!--Left column-->
-            <div class="col">
+            <div class="col ">
                 <!-- <h1>GitHub</h1>
                 <p class="center">
                     You can view some of my personal projects on my GitHub profile here:
@@ -322,8 +312,8 @@
                     <img src="img/GitProfilePic.JPG" class="card-img-top" alt="My GitHub Profile Picture" style="max-height: 350px; max-width: 350px;">
                     <div class="card-body">
                     <h5 class="card-title">GitHub</h5>
-                    <p class="card-text">You can view some of my personal projects on my GitHub profile here:</p>
-                    <a href="#" class="btn btn-primary">github.com/DevSciCloan</a>
+                    <p class="card-text">View some of my personal projects GitHub:</p>
+                    <a href="https://github.com/DevSciCloan" class="btn btn-primary" target="_blank">github.com/DevSciCloan</a>
                     </div>
                 </div>
             </div>
@@ -337,8 +327,8 @@
         <!--Contact section-->
         <!--Contact Form-->
         <div id="Contact">
-            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
-            <div class="form-popup" id="myForm">
+            <a href="#Contact" style="text-decoration: none;"><button  class="Pop_Up_Button">CONTACT</button></a>
+            <div class="row" id="myForm">
                 <form action="https://formspree.io/f/xjvzaprb" method="POST" class="form-container">
                     <h1>Contact</h1>
                     <label for="name"><b>Name</b></label>
@@ -352,7 +342,7 @@
                     <input class="Contact_Input" type="text" placeholder="Type message here..." name="message">
 
                     <button type="submit" class="btn">SUBMIT</button>
-                    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                    <button type="button" class="btn cancel">CLOSE</button>
                 </form>
             </div>
         </div>

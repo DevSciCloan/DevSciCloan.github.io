@@ -14,10 +14,12 @@ body {
   user-select: none;
 }
 
-/* This section assists the fade effect on initial load */
-body.fade-out {
-  opacity: .1;
+.user-select
+{
+  user-select: text;
 }
+
+
 
 /* Heading 1 elements */
 h1 {
@@ -28,12 +30,12 @@ h1 {
   color: #1a1a1a;
 }
 
-/* Heading 1 element hover effect */
+/** Heading 1 element hover effect 
 h1:hover {
-  filter: grayscale(5%); /* Adds a slightly gray filter to the h1 headings when hovered over */
-  transform: scale(1.1); /* When the h1 elements are hovered over they increase in size by 1.1 */
-  transition: transform 1s; /* This causes the transformation to last 1 second */
-}
+  filter: grayscale(5%); /* Adds a slightly gray filter to the h1 headings when hovered over 
+  transform: scale(1.1); /* When the h1 elements are hovered over they increase in size by 1.1 
+  transition: transform 1s; /* This causes the transformation to last 1 second 
+}*/
 
 /* Styling for portfolio title text */
 .White-text {
@@ -49,26 +51,26 @@ p {
   padding-right: 20px; /* Adds padding to the right of the paragraph element */
 }
 
-/* Paragraph element hover effect */
+/* Paragraph element hover effect 
 p:hover {
-  transition: transform 1s; /* This makes the transform effect last 1 second */
+  transition: transform 1s; /* This makes the transform effect last 1 second 
   transform: scale(
     1.01
-  ); /* This makes the paragraphs increase slightly in size when hovered over */
-}
+  ); /* This makes the paragraphs increase slightly in size when hovered over 
+}*/
 
 /* Center class - this applies to all elements with the class "center" */
 .center {
   text-align: center; /* This center aligns the text */
 }
 
-/* Center class hover effect - This only affects the quote, github link, and footer */
+/* Center class hover effect - This only affects the quote, github link, and footer 
 .center:hover {
-  transition: transform 2s; /* This makes the transform effect last 2 seconds */
+  transition: transform 2s; /* This makes the transform effect last 2 seconds 
   transform: scale(
     1.1
-  ); /* This makes the elements with class "center" increase in size by 1.1 when hovered over */
-}
+  ); /* This makes the elements with class "center" increase in size by 1.1 when hovered over 
+}*/
 
 /* Anchor elements */
 a {
@@ -82,7 +84,7 @@ q {
 
 /* Image elements */
 img {
-  filter: grayscale(75%); /* This rids our pictures of 75% of their color */
+  /*filter: grayscale(75%);  This rids our pictures of 75% of their color */
   border-radius: 8px; /* Gives all images slightly rounded corners */
   max-width: 100%; /* Ensures all images stay within the width of their container */
   /*height: 340px; Sets the height of all images */
@@ -92,23 +94,23 @@ img {
   margin-right: auto;
 }
 
-/* Image element hover effects */
+/* Image element hover effects 
 img:hover {
   filter: grayscale(
     5%
-  ); /* Brings back most of the image's color when hovered over */
-  transition: transform 1s; /* Transition lasts 1 second */
-  transform: scale(1.1); /* Image is increased slightly when hovered over */
-}
+  ); /* Brings back most of the image's color when hovered over 
+  transition: transform 1s; /* Transition lasts 1 second 
+  transform: scale(1.1); /* Image is increased slightly when hovered over 
+}*/
 
-/* The @media rule is used in media queries to apply different styles for different media/types of devices */
-/* On screens 576px and smaller the images will be 100px tall and centered vertically in the column */
+/* The @media rule is used in media queries to apply different styles for different media/types of devices 
+/* On screens 576px and smaller the images will be 100px tall and centered vertically in the column 
 @media screen and (max-width: 576px) {
   img {
     /*height: 100px;
-    margin-top: 150px;*/
+    margin-top: 150px;
   }
-}
+}*/
 
 /* Styling for footer element */
 footer {
@@ -124,19 +126,19 @@ footer {
   top: 0; /* This ensures no space is displayed above the navbar */
   width: 100%; /* This makes the navbar span the entire width of the page */
   z-index: 1; /* This ensures other elements don't display over the navbar */
-  -webkit-animation: moveNav 5s; /* This applies the moveNav animation below for Safari 4.0 - 8.0 */
-  animation: moveNav 5s; /* This applies the moveNav animation for all other browsers */
+  /*-webkit-animation: moveNav 5s; /* This applies the moveNav animation below for Safari 4.0 - 8.0 
+  animation: moveNav 5s;  This applies the moveNav animation for all other browsers */
 }
 
-/* moveNav animation effect for moving the nav bar in from the left of the screen */
+/* moveNav animation effect for moving the nav bar in from the left of the screen 
 @keyframes moveNav {
   from {
     left: -100vw;
-  } /* The navbar is starting off screen to the left */
+  } /* The navbar is starting off screen to the left 
   to {
     left: 0vw;
-  } /* This moves the navbar into place on the screen */
-}
+  } /* This moves the navbar into place on the screen 
+}*/
 
 /* Navbar links */
 .Navbar a {
@@ -149,19 +151,19 @@ footer {
   font-size: 20px; /* This specifies the font size for text on our navbar */
   text-align: center; /* This centers the text within its container */
   position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below */
-  -webkit-animation: moveNavText 5.75s; /* Animation for Safari 4.0 - 8.0 */
+  /*-webkit-animation: moveNavText 5.75s; /* Animation for Safari 4.0 - 8.0 
   animation: moveNavText 5.75s; /* Applies the moveNavText animation for 5.75s */
 }
 
-/* moveNavText animation effect for moving the navbar text from above the view to the navbar */
+/* moveNavText animation effect for moving the navbar text from above the view to the navbar 
 @keyframes moveNavText {
   from {
     top: -100vw;
-  } /* This sets the navbar text 100% above the viewport */
+  } /* This sets the navbar text 100% above the viewport 
   to {
     top: 0vw;
-  } /* This lowers the navbar text onto the navbar */
-}
+  } /* This lowers the navbar text onto the navbar 
+}*/
 
 /* Screens 576px and smaller will display navbar links equally distributed */
 @media screen and (max-width: 576px) {
@@ -462,6 +464,17 @@ footer {
   justify-content: space-evenly;
 }
 
+.align-flex-center 
+{
+  display: flex;
+  align-items: center;
+}
+
+.embed-height 
+{
+  height: 400px;
+}
+
 .row {
     background-color: whitesmoke;
     margin-left: 2rem;
@@ -469,6 +482,7 @@ footer {
     border-right: 4px solid black;
     border-left: 4px solid black;
     padding: 1rem;
+    min-height: 400px;
 }
 
 .card-header
@@ -574,7 +588,7 @@ button {
 /* Hover effect for contact and submit buttons */
 button:hover, .form-container .btn:hover {
   color: rgb(0, 0, 0); /* This makes the text in the buttons white when hovered over */
-  background-color: rgb(13, 151, 0); /* The background of the button changes to black when hovered over */
+  background-color: rgba(255, 255, 255, 0.505); /* The background of the button changes to black when hovered over */
   transition-duration: 1s; /* This makes the transition last 1 second */
   -webkit-transition-duration: 1s; /* For Safari 4.0-8.0 */
   border-color: silver; /* The border turns silver when the button is hovered over */

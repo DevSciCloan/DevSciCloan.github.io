@@ -46,3 +46,19 @@ window.onscroll = function() {
     
   }
 }
+
+document.addEventListener(
+  "click",
+  function (event) {
+    // Here we state that if the click happens on the cancel button OR anywhere that is not the contact form AND the click does not happen on any element with the contact class then call the closeForm() function
+    if (
+      event.target.matches(".closebtn") ||
+      (!event.target.closest(".sidenav") &&
+      !event.target.closest(".menu-item") &&
+      !event.target.closest("#mini-nav"))
+    ) {
+      closeNav();
+    }
+  },
+  false
+);
