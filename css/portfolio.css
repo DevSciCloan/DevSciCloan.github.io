@@ -533,7 +533,7 @@ footer {
   cursor: pointer; /* This changes the cursor when hovered over the button to a pointer */
   -webkit-animation: movePopup 5s; /* Animation for 5 seconds for Safari 4.0-8.0 */
   animation: movePopup 5s; /* Animation set for 5 seconds */
-  font-size: 1rem;
+  /* font-size: 1rem; */
 }
 
 /* movePopup animation moves the button from off the right side of the screen to its fixed location on the viewport */
@@ -631,6 +631,19 @@ button:hover, .form-container .btn:hover {
   }
 }
 
+@media screen and (max-width: 775px)
+{
+  .row 
+  {
+    flex-direction: column;
+  }
+
+  .col 
+  {
+    flex: none !important;
+  }
+}
+
 @media screen and (min-width: 528px) and (max-width: 660px) {
   p {
       font-size: 3.5vw;
@@ -674,6 +687,12 @@ button:hover, .form-container .btn:hover {
   .form-container, .form-popup {
     max-width: 100%;
     font-size: larger;
+  }
+
+  .Pop_Up_Button 
+  {
+    font-size: .8rem !important;
+    width: auto;
   }
 }
 
