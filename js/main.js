@@ -34,15 +34,35 @@ function MoveNextButtonOnLoad()
   }
 }
 
-function ToggleVideo(clickedButton,otherButton,show,hide)
+function ToggleVideo(clickedButton,show)
 {
-  var toShow = document.getElementById(show);
-  toShow.hidden = false;
-  var toHide = document.getElementById(hide)
-  toHide.hidden = true;
+  var parent = clickedButton.parentElement;
+  var buttons = Array.from(parent.getElementsByTagName('button'));
+  var parentOfParent = parent.parentElement;
+  buttons.forEach(button => {
+    if (button != clickedButton)
+    {
+      button.style.backgroundColor = "white";
+    }
+  });
 
-  document.getElementById(clickedButton).style.backgroundColor = "aquamarine";
-  document.getElementById(otherButton).style.backgroundColor = "white";
+  var iframes = Array.from(parentOfParent.getElementsByTagName('iframe'));
+  iframes.forEach(iframe => {
+    if (!iframe.hidden)
+    {
+      iframe.hidden = true;
+    }
+  });
+  document.getElementById(show).hidden = false;
+  clickedButton.style.backgroundColor = "aquamarine";
+
+  // var toShow = document.getElementById(show);
+  // toShow.hidden = false;
+  // var toHide = document.getElementById(hide)
+  // toHide.hidden = true;
+
+  // document.getElementById(clickedButton).style.backgroundColor = "aquamarine";
+  // document.getElementById(otherButton).style.backgroundColor = "white";
 }
 
 
