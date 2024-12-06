@@ -9,7 +9,7 @@
 
 var jmediaquery = window.matchMedia("(max-width: 999px)");
 jmediaquery.addListener(MoveNextButton);
-window.onload = MoveNextButtonOnLoad();
+
 function MoveNextButton()
 {
   if (jmediaquery.matches)
@@ -24,6 +24,7 @@ function MoveNextButton()
   }
 }
 
+window.onload = MoveNextButtonOnLoad();
 function MoveNextButtonOnLoad()
 {
   if (window.innerWidth < 1000)
@@ -31,6 +32,17 @@ function MoveNextButtonOnLoad()
     var prevButton = document.getElementById("prevButton");
     prevButton.appendChild(document.getElementById("nextButton"));
   }
+}
+
+function ToggleVideo(clickedButton,otherButton,show,hide)
+{
+  var toShow = document.getElementById(show);
+  toShow.hidden = false;
+  var toHide = document.getElementById(hide)
+  toHide.hidden = true;
+
+  document.getElementById(clickedButton).style.backgroundColor = "aquamarine";
+  document.getElementById(otherButton).style.backgroundColor = "white";
 }
 
 
