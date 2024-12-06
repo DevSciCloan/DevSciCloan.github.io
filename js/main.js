@@ -7,6 +7,33 @@
 //   document.getElementById("myForm").style.display = "none";
 // }
 
+var jmediaquery = window.matchMedia("(max-width: 999px)");
+jmediaquery.addListener(MoveNextButton);
+window.onload = MoveNextButtonOnLoad();
+function MoveNextButton()
+{
+  if (jmediaquery.matches)
+  {
+    var prevButton = document.getElementById("prevButton");
+    prevButton.appendChild(document.getElementById("nextButton"));
+  }
+  else 
+  {
+    var prevButton = document.getElementById("nextButtonContainer");
+    prevButton.appendChild(document.getElementById("nextButton"));
+  }
+}
+
+function MoveNextButtonOnLoad()
+{
+  if (window.innerWidth < 1000)
+  {
+    var prevButton = document.getElementById("prevButton");
+    prevButton.appendChild(document.getElementById("nextButton"));
+  }
+}
+
+
 // This function displays the first image in the slideshow when the page loads
 var slideIndex = 1;
 showSlides(slideIndex);

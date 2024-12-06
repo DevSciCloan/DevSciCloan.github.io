@@ -322,7 +322,8 @@ footer {
 
 /* Slideshow section / container */
 #Slideshow_Container {
-  width: 39.5vw; /* Relative sizing of the container for the slidewshow set to 39.5% of the viewport width */
+  min-width: 50vw; /*Relative sizing of the container for the slidewshow set to 39.5% of the viewport width*/
+  max-width: 100vw;
   height: auto; /* The height of the container is automatically adjusted based on the content it is displaying */
   padding-top: 4%; /* Adds a small padding to the top of the slideshow container */
   position: relative; /* This sets the container relative to its normal positioning */
@@ -345,11 +346,12 @@ footer {
 /* Next and previous buttons */
 .Previous, .Next {
   cursor: pointer; /* Changes the mouse to a pointer when the buttons are selected */
-  position: absolute; /* This makes the next and previous buttons positioned relative to the slideshow container */
+  /*position: relative; /* This makes the next and previous buttons positioned relative to the slideshow container */
+  display: inline-block;
   top: 50%; /* This moves the buttons up in the slideshow container */
-  width: auto; /* The width of the buttons is automatically adjusted based on the content */
+  /*width: auto; /* The width of the buttons is automatically adjusted based on the content */
   padding: 2vw; /* Adds padding equal to 2% of the viewport width */
-  color: darkgray; 
+  color: rgb(125, 125, 125); 
   font-weight: bold;
   font-size: 1.5vw;
   border-radius: 0 3px 3px 0; /* Adds a slightly rounded border on the top and bottom right corners */
@@ -631,13 +633,13 @@ button:hover, .form-container .btn:hover {
   }
 }
 
-@media screen and (max-width: 775px)
+
+@media screen and (max-width: 999px)
 {
-  .row 
+  .row
   {
     flex-direction: column;
   }
-
   .col 
   {
     flex: none !important;
@@ -729,7 +731,7 @@ button:hover, .form-container .btn:hover {
   
   .Slideshow_Images, div.mySlides,div#Slideshow_Container {
     max-height: 960px;
-    max-width: 830px;
+    /* max-width: 830px; */
   }
   div.text {
     max-width: 830px;

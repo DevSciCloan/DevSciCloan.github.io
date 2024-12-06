@@ -63,78 +63,17 @@
         </strong>
     </div>
 <div id="main">
-    <!--Slideshow-->
-    <div id="Slideshow">
-        <div class="Slideshow_Background">
-            <div id="Slideshow_Container">
-                <!--Slide 1 of 7-->
-                <div class="mySlides Fade">
-                    <img class="Slideshow_Images" src="img/Profile_Picture.jpg" alt="Picture of Jonathan">
-                </div>
-                <!--Slide 2 of 7-->
-                <div class="mySlides Fade">
-                    <img class="Slideshow_Images" src="https://unity.com/themes/contrib/unity_base/images/og.jpg" alt="Unity Logo">
-                    <div class="text">I AM A GAME PROGRAMMER TRAINED IN:<br>UNITY WITH C#
-                    </div>
-                </div>
-                <!--Slide 3 of 7-->
-                <div class="mySlides Fade">
-                    <img class="Slideshow_Images" src="img/HTML_CSS_and_JavaScript.jpeg" alt="HTML, CSS, and JS logos">
-                    <div class="text">FORMER SOFTWARE DEVELOPER TRAINED IN:<br>HTML, CSS, JavaScript, Java, C#, and...
-                    </div>
-                </div>
-                <!--Slide 4 of 7-->
-                <div class="mySlides Fade">
-                    <img class="Slideshow_Images" src="img/Python.png" alt="Python logo">
-                    <div class="text">THE POPULAR PROGRAMMING LANGUAGE: <br>PYTHON</div>
-                </div>
-                <!--Slide 5 of 7-->
-                <div class="mySlides Fade">
-                    <img class="Slideshow_Images" src="img/C_Sharp_and_Dot_NET.png" alt="C# logo">
-                    <div class="text">ASP.NET Core/Framework MVC, Azure</div>
-                </div>
-                <!--Slide 6 of 7-->
-                <div class="mySlides Fade">
-                    <img class="Slideshow_Images" src="img/SQL_and_Database.jpg" alt="SQL logo">
-                    <div class="text">SQLite, MySQL, Procedures, and more!</div>
-                </div>
-                <!--Slide 7 of 7-->
-                <div class="mySlides Fade">
-                    <img class="Slideshow_Images" src="img/Square_Custom_Picture.png" alt="Contact image">
-                    <a class="white-text contact" href="#Contact"><div class="text" style="cursor: pointer;">CLICK HERE!</div></a>
-                </div>
-                <!-- Slideshow nav buttons -->
-                <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="Next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-            <br> <!-- Adds spacing between the slideshow images and the dots -->
-
-            <!-- Slideshow dots (dual functionality as buttons to navigate slideshow) -->
-            <div id="dots" style="text-align: center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
-                <span class="dot" onclick="currentSlide(5)"></span>
-                <span class="dot" onclick="currentSlide(6)"></span>
-                <span class="dot" onclick="currentSlide(7)"></span>
-            </div>
-        </div>
-    </div>
-    <!--End Slideshow-->
-
+    
+    
     <div class="container">
-
-        
         <!--About section-->
         <div class="row" id="About">
-            
             <!--Right column-->
             <div class="p-3">
                 <h2 class="center">About</h2>
                 <p class="user-select">
                     I am a former Software Developer, now Game Programmer, who loves to code! My passion is Game Development. 
-                    <br>I am competant with Unity and currently learning Unreal Engine 5.
+                    <br>I am competant with Unity, Godot, and Unreal Engine 5.
                     
                     <br>Game Programmer / AI Programmer at <a href="https://www.bitrategames.com/" target="_blank" >Bitrate Games</a>.
                     <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech 
@@ -145,7 +84,117 @@
                 </p>
             </div>
         </div>
+        
+         <!--Slideshow-->
+        <div id="Slideshow">
+            <div style="width: 100%; padding-left: 5rem;padding-right: 5rem; ">
+                <div style = "background-color: aliceblue; margin: auto;">
+                    <div style="margin-top: 2rem;padding: .2rem;"><h3 class="center">Featured Systems</h3></div>
+                </div>
+            </div>
+            
+            <div class="Slideshow_Background">
+                
+                
+                <div id="Slideshow_Container" >
+                    <div class="row" style="display: flex;align-items: center;">
+                        <div class="col" id="prevButton" style="max-width: fit-content;max-height: fit-content;">
+                            <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                        </div>
+                        <div class="col" >
+                            <!--Slide 1 of 7-->
+                            <div class="mySlides Fade" >
+                                <!--Particle Path section-->
+                                <div class="row align-flex-center" id="ParticlePath" style="border: none;">
+                                    <!--Left column-->
+                                    <div class="col">
+                                        <div class="card" style="background-color: rgba(255, 255, 255, 0.34);">
+                                            <div class="card-header">
+                                                Prototype
+                                                
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Tutorial Objective Particle Path</h5>
+                                                <br>
+                                                <p class="card-text">
+                                                    Here I created a particle system based feature that draws a path from the player's position to the current tutorial objective.
+                                                    
+                                                    <br>
+                                                    <p class="center"><span style="font-weight: bold; "><a href="https://www.reddit.com/r/SkyJellies/" target="_blank" style="text-decoration-line: none;">Sky Jellies</a></span> by People First Open Metaverse 
+                                                        <br>
+                                                        <a href="https://www.linkedin.com/company/p1om/" target="_blank" style="text-decoration-line: none;">LinkedIn</a>
+                                                    </p>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Right column-->
+                                    <div class="col embed-height">
+                                        <iframe 
+                                            style="width:100%;height:100%;" 
+                                            src="https://www.youtube-nocookie.com/embed/yljZcqiVQ7E" 
+                                            title="YouTube video player" frameborder="0" 
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                            allowfullscreen>
+                                        </iframe>
 
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Slide 2 of 7-->
+                            <div class="mySlides Fade">
+                                <!--Target throw section-->
+                                <div class="row align-flex-center" id="TargetThrow"  style="border: none;">
+                                    <!--Left column-->
+                                    <div class="col">
+                                        <h1>Target Indicator: Pickup & Throw</h1>
+                                        <p class="center">
+                                            <a href="https://nojellynolife.itch.io/" target="_blank">
+                                                <img src="img/Untitled_Artwork_Cropped.png"
+                                                    style="max-height: 400px; display: inline-block;filter: none;"
+                                                />
+                                            </a>
+                                            <br>
+                                            Pickup and throw targeting system.
+                                        </p>
+                                    </div>
+                                    <!--Right column-->
+                                    <div class="col embed-height">
+                                        <iframe 
+                                            style="width:100%;height:100%;" 
+                                            src="https://www.youtube-nocookie.com/embed/lpbcBaNyjKI" 
+                                            title="YouTube video player" frameborder="0" 
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                            allowfullscreen>
+                                        </iframe>
+
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col" id="nextButtonContainer" style="max-width: fit-content;max-height: fit-content;">
+                            <a class="Next" id="nextButton" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+
+                    </div>
+                
+                <br> <!-- Adds spacing between the slideshow images and the dots -->
+
+                <!-- Slideshow dots (dual functionality as buttons to navigate slideshow) -->
+                <div id="dots" style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+            </div>
+        </div>
+        <!--End Slideshow-->
+
+        <div style="width: 100%; padding-left: 5rem;padding-right: 5rem; margin-bottom: 2rem;">
+            <div style = "background-color: aliceblue; margin: auto;">
+                <div style="margin-top: 2rem;padding: .2rem;"><h3 class="center">Featured Games</h3></div>
+            </div>
+        </div>
         <!--Scarlett's Game 2D section-->
         <div class="row align-flex-center" id="ScarlettsGame2D">
             <!--Left column-->
@@ -244,42 +293,7 @@
             </div>
         </div>
 
-        <!--Particle Path section-->
-        <div class="row align-flex-center" id="ParticlePath">
-            <!--Left column-->
-            <div class="col">
-                <div class="card" style="background-color: rgba(255, 255, 255, 0.34);">
-                    <div class="card-header">
-                        Prototype
-                        
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Tutorial Objective Particle Path</h5>
-                        <br>
-                        <p class="card-text">
-                            Here I created a particle system based feature that draws a path from the player's position to the current tutorial objective.
-                            
-                            <br>
-                            <p class="center"><span style="font-weight: bold; "><a href="https://www.reddit.com/r/SkyJellies/" target="_blank" style="text-decoration-line: none;">Sky Jellies</a></span> by People First Open Metaverse 
-                                <br>
-                                <a href="https://www.linkedin.com/company/p1om/" target="_blank" style="text-decoration-line: none;">LinkedIn</a>
-                            </p>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!--Right column-->
-            <div class="col embed-height">
-                <iframe 
-                    style="width:100%;height:100%;" 
-                    src="https://www.youtube-nocookie.com/embed/yljZcqiVQ7E" 
-                    title="YouTube video player" frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowfullscreen>
-                </iframe>
-
-            </div>
-        </div>
+        
 
         <!--Othello section-->
         <div class="row align-flex-center" id="Othello">
@@ -343,33 +357,7 @@
             </div>
         </div>
 
-        <!--Target throw section-->
-        <div class="row align-flex-center" id="TargetThrow">
-            <!--Left column-->
-            <div class="col">
-                <h1>Target Indicator: Pickup & Throw</h1>
-                <p class="center">
-                    <a href="https://nojellynolife.itch.io/" target="_blank">
-                        <img src="img/Untitled_Artwork_Cropped.png"
-                            style="max-height: 400px; display: inline-block;filter: none;"
-                        />
-                    </a>
-                    <br>
-                    Pickup and throw system for a game.
-                </p>
-            </div>
-            <!--Right column-->
-            <div class="col embed-height">
-                <iframe 
-                    style="width:100%;height:100%;" 
-                    src="https://www.youtube-nocookie.com/embed/lpbcBaNyjKI" 
-                    title="YouTube video player" frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowfullscreen>
-                </iframe>
-
-            </div>
-        </div>
+        
 
         <!--GitHub section-->
         <div class="row align-flex-center" id="GitHub">
