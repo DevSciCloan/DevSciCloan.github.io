@@ -72,15 +72,13 @@
             <div class="p-3">
                 <h2 class="center">About</h2>
                 <p class="user-select">
-                    I am a former Software Developer, now Game Programmer, who loves to code! My passion is Game Development. 
-                    <br>I am competant with Unity, Godot, and Unreal Engine 5.
-                    
-                    <br>Game Programmer / AI Programmer at <a href="https://www.bitrategames.com/" target="_blank" >Bitrate Games</a>.
-                    <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech 
-                    Academy</a>’s Software Developer Boot Camp and a graduate of <a href="http://www.slcc.edu/">Salt Lake Community College</a>.<br>I am trained and experienced in the following web and
-                    programming languages:<br>HTML, CSS, JavaScript, SQL, C#, Python and more.
+                    Unity Engineer specializing in gameplay systems and editor tooling.<br>
+                    I design scalable Unity architectures and tools that help teams build, iterate, and ship reliably.<br>
                     <br>
-                    <br>I am available for hire. Feel free to <a class="contact">Contact</a> me!
+                    Game Programmer at <a href="https://www.bitrategames.com/" target="_blank">Bitrate Games</a>.<br>
+                    Experienced with Unity (C#), Unreal Engine (Blueprints), and Godot.<br>
+                    <br>
+                    Available for hire — <a class="contact">contact</a> me.
                 </p>
             </div>
         </div>
@@ -95,44 +93,51 @@
             
             <div class="Slideshow_Background">
                 
-                
                 <div id="Slideshow_Container" >
                     <div class="row" style="display: flex;align-items: center; border-bottom: 4px solid black;">
                         <div class="col" id="prevButton" style="max-width: fit-content;max-height: fit-content;">
                             <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
                         </div>
                         <div class="col" >
-                            <!--Slide 1 of 7-->
+                            <!-- Slide 1 of 5 -->
                             <div class="mySlides Fade" >
                                 <!--Particle Path section-->
-                                <div class="row align-flex-center" id="ParticlePath" style="border: none;">
+                                <div class="row align-flex-center" id="SOTrajectory" style="border: none;">
                                     <!--Left column-->
                                     <div class="col">
                                         <div class="card" style="background-color: rgba(255, 255, 255, 0.34);">
                                             <div class="card-header">
-                                                Prototype
-                                                
+                                                Projectile Trajectory System
                                             </div>
                                             <div class="card-body">
-                                                <h5 class="card-title">Tutorial Objective Particle Path</h5>
+                                                <h5 class="card-title">ScriptableObject Trajectories<br><sub>Easy to Use</sub></h5>
+                                                
                                                 <br>
                                                 <p class="card-text">
-                                                    I created a tutorial objective particle path. This system uses the built in Particle System and AI Navigation to draw a path from the player to the current tutorial objective along walkable areas.
-                                                    
-                                                    <br>
-                                                    <p class="center"><span style="font-weight: bold; "><a href="https://www.reddit.com/r/SkyJellies/" target="_blank" style="text-decoration-line: none;">Sky Jellies</a></span> by People First Open Metaverse 
-                                                        <br>
-                                                        <a href="https://www.linkedin.com/company/p1om/" target="_blank" style="text-decoration-line: none;">LinkedIn</a>
-                                                    </p>
+                                                   Implemented an abstract ScriptableObject architecture to decouple projectile trajectory logic and support rapid creation of new movement patterns.
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
                                     <!--Right column-->
+                                    
                                     <div class="col embed-height">
-                                        <iframe 
+                                        <div class="btn-group center" role="group" aria-label="Video Tabs">
+                                            <button type="button" class="btn btn-outline-primary" onclick="ToggleVideo(this,'Trajectoryvid1')">Visualizer</button>
+                                            <button type="button" class="btn btn-outline-primary" onclick="ToggleVideo(this,'Trajectoryvid2')" style="background-color: aquamarine;">Setup</button>
+                                        </div>
+                                        <iframe id="Trajectoryvid1" hidden
                                             style="width:100%;height:100%;" 
-                                            src="https://www.youtube-nocookie.com/embed/yljZcqiVQ7E" 
+                                            src="https://www.youtube-nocookie.com/embed/V5IIB53rksw?si=pm5hmiJewWDmh8jM" 
+                                            title="YouTube video player" frameborder="0" 
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                            allowfullscreen>
+                                        </iframe>
+
+                                    
+                                        <iframe visible id="Trajectoryvid2" 
+                                            style="width:100%;height:100%;" 
+                                            src="https://www.youtube-nocookie.com/embed/Lo4w0JCqjLg?si=CSOBrZP6SKNE0daL" 
                                             title="YouTube video player" frameborder="0" 
                                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                                             allowfullscreen>
@@ -141,37 +146,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!--Slide 2 of 7-->
-                            <div class="mySlides Fade">
-                                <!--Target throw section-->
-                                <div class="row align-flex-center" id="TargetThrow"  style="border: none;">
-                                    <!--Left column-->
-                                    <div class="col">
-                                        <h1>Target Indicator: Pickup & Throw</h1>
-                                        <p class="center">
-                                            <a href="https://nojellynolife.itch.io/" target="_blank">
-                                                <img src="img/Untitled_Artwork_Cropped.png"
-                                                    style="max-height: 400px; display: inline-block;filter: none;"
-                                                />
-                                            </a>
-                                            <br>
-                                            Pickup and throw targeting system.
-                                        </p>
-                                    </div>
-                                    <!--Right column-->
-                                    <div class="col embed-height">
-                                        <iframe 
-                                            style="width:100%;height:100%;" 
-                                            src="https://www.youtube-nocookie.com/embed/lpbcBaNyjKI" 
-                                            title="YouTube video player" frameborder="0" 
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                            allowfullscreen>
-                                        </iframe>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Slide 3 of 7 -->
+                            <!-- Slide 2 of 5 -->
                             <div class="mySlides Fade" >
                                 <!--Particle Path section-->
                                 <div class="row align-flex-center" id="InteractionSystemMadeEasy" style="border: none;">
@@ -186,8 +161,7 @@
                                                 
                                                 <br>
                                                 <p class="card-text">
-                                                    I used Umotion, Odin, and IK Rigging. Some of the features included are interactable requirements, and player inventory. I designed this to be an easy to use item/environment interaction system. Complete with animation states for pickup, store, drop, and button press.
-                                                    
+                                                    Designed and implemented an interaction system integrating Umotion, Odin, and IK rigging, supporting inventory-driven item and environment interactions. The system includes requirement-based interactions and animation state handling for pickup, storage, dropping, and button activation.
                                                 </p>
                                             </div>
                                         </div>
@@ -219,6 +193,109 @@
                                     </div>
                                 </div>
                             </div>
+                            <!--Slide 3 of 5-->
+                            <div class="mySlides Fade" >
+                                <!--Particle Path section-->
+                                <div class="row align-flex-center" id="HFSM" style="border: none;">
+                                    <!--Left column-->
+                                    <div class="col">
+                                        <div class="card" style="background-color: rgba(255, 255, 255, 0.34);">
+                                            <div class="card-header">
+                                                Prototype
+                                                
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">ScriptableObject HFSM</h5>
+                                                <br>
+                                                <p class="card-text">
+                                                    Designed and implemented a hierarchical finite state machine using abstract ScriptableObjects and a state creation wizard, enabling scalable behavior composition and rapid state authoring.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Right column-->
+                                    <div class="col embed-height">
+                                        <iframe 
+                                            style="width:100%;height:100%;" 
+                                            src="https://www.youtube-nocookie.com/embed/pBUNWhisnaM?si=KQNG0l1EArY71PKM" 
+                                            title="YouTube video player" frameborder="0" 
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                            allowfullscreen>
+                                        </iframe>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Slide 4 of 5-->
+                            <div class="mySlides Fade" >
+                                <!--Particle Path section-->
+                                <div class="row align-flex-center" id="ParticlePath" style="border: none;">
+                                    <!--Left column-->
+                                    <div class="col">
+                                        <div class="card" style="background-color: rgba(255, 255, 255, 0.34);">
+                                            <div class="card-header">
+                                                Prototype
+                                                
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Tutorial Objective Particle Path</h5>
+                                                <br>
+                                                <p class="card-text">
+                                                    Designed and implemented a tutorial guidance system that combines Unity’s Particle System with AI Navigation to dynamically visualize walkable paths from the player to the active objective.
+                                                    
+                                                    <br>
+                                                    <p class="center"><span style="font-weight: bold; "><a href="https://www.reddit.com/r/SkyJellies/" target="_blank" style="text-decoration-line: none;">Sky Jellies</a></span> by People First Open Metaverse 
+                                                        <br>
+                                                        <a href="https://www.linkedin.com/company/p1om/" target="_blank" style="text-decoration-line: none;">LinkedIn</a>
+                                                    </p>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Right column-->
+                                    <div class="col embed-height">
+                                        <iframe 
+                                            style="width:100%;height:100%;" 
+                                            src="https://www.youtube-nocookie.com/embed/yljZcqiVQ7E" 
+                                            title="YouTube video player" frameborder="0" 
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                            allowfullscreen>
+                                        </iframe>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Slide 5 of 5-->
+                            <div class="mySlides Fade">
+                                <!--Target throw section-->
+                                <div class="row align-flex-center" id="TargetThrow"  style="border: none;">
+                                    <!--Left column-->
+                                    <div class="col">
+                                        <h1>Target Indicator: Pickup & Throw</h1>
+                                        <p class="center">
+                                            <a href="https://nojellynolife.itch.io/" target="_blank">
+                                                <img src="img/Untitled_Artwork_Cropped.png"
+                                                    style="max-height: 400px; display: inline-block;filter: none;"
+                                                />
+                                            </a>
+                                            <br>
+                                            Pickup and throw targeting system.
+                                        </p>
+                                    </div>
+                                    <!--Right column-->
+                                    <div class="col embed-height">
+                                        <iframe 
+                                            style="width:100%;height:100%;" 
+                                            src="https://www.youtube-nocookie.com/embed/lpbcBaNyjKI" 
+                                            title="YouTube video player" frameborder="0" 
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                            allowfullscreen>
+                                        </iframe>
+
+                                    </div>
+                                </div>
+                            </div>
+                            
                             
                         </div>
                         <div class="col" id="nextButtonContainer" style="max-width: fit-content;max-height: fit-content;">
@@ -234,6 +311,8 @@
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
                     <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
                 </div>
             </div>
         </div>
@@ -242,6 +321,35 @@
         <div style="width: 100%; padding-left: 5rem;padding-right: 5rem; margin-bottom: 2rem;">
             <div style = "background-color: aliceblue; margin: auto;">
                 <div style="margin-top: 2rem;padding: .2rem;"><h3 class="center">Featured Games</h3></div>
+            </div>
+        </div>
+        <!--Scarlett's Game 2D section-->
+        <div class="row align-flex-center" id="ScarlettsGame2D">
+            <!--Left column-->
+            <div class="col">
+                
+
+                <div class="card" style="background-color: rgba(255, 255, 255, 0.34);">
+                    <div class="card-header">
+                        Complete Game
+                    </div>
+                    <div class="card-body" >
+                    <h5 class="card-title">Robo Routes by DevSciCloan</h5>
+                    <p class="card-text">WebGL game with mobile support to teach elementary school kids some of the core fundamentals of programming.<br>
+                    <a href="https://devscicloan.itch.io/roboroutes-learn-to-code" class="btn btn-primary">Play on Itch.io</a><p style="font-size: medium;">(mobile supported)</p>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <!--Right column-->
+            <div class="col embed-height">
+                <img 
+                    style="width:100%;height:100%;" 
+                    src="img/RoboRoutes.gif" 
+                    alt="Robo Routes Screenshot"
+                    >
+                
             </div>
         </div>
         <!--Scarlett's Game 2D section-->
@@ -277,38 +385,7 @@
             </div>
         </div>
 
-        <!--Scarlett's Game section-->
-        <div class="row align-flex-center" id="ScarlettsGame">
-            <!--Left column-->
-            <div class="col">
-                
-
-                <div class="card" style="background-color: rgba(255, 255, 255, 0.34);">
-                    <div class="card-header">
-                        In Development
-                        
-                    </div>
-                    <div class="card-body" >
-                    <h5 class="card-title">Scarlett's Game by DevSciCloan</h5>
-                    <p class="card-text">3D platformer game I built in Unity.<br>Cosmetic customization rewards.<br>Obstacle courses.<br>Exploration.</p>
-                    <a href="https://nojellynolife.itch.io/scarletts-game" class="btn btn-primary">Download on Itch.io</a>
-                    </div>
-                </div>
-                
-                
-            </div>
-            <!--Right column-->
-            <div class="col embed-height">
-                <iframe 
-                    style="width:100%;height:100%;" 
-                    src="https://www.youtube-nocookie.com/embed/QLgQcqOP6PE" 
-                    title="YouTube video player" frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowfullscreen>
-                </iframe>
-                
-            </div>
-        </div>
+        <!--Fluttering Heights section-->
 
         <div class="row align-flex-center" id="FlutteringHeights">
             <!--Left column-->
@@ -317,17 +394,14 @@
 
                 <div class="card" style="background-color: rgba(255, 255, 255, 0.34);">
                     <div class="card-header">
-                        In Development
-                        
+                        Complete Game
                     </div>
                     <div class="card-body" >
                     <h5 class="card-title">Fluttering Heights by DevSciCloan</h5>
                     <p class="card-text">2D side scrolling game that I built in Unity.<br>Carry a poor helpless egg to safety through a perilous array of obstacles.<br>Aqcuire rainbow energy to hatch the golden egg!</p>
-                    <a href="https://devscicloan.itch.io/fluttering-heights" class="btn btn-primary">Play now on Itch.io</a>
+                    <a href="https://devscicloan.itch.io/fluttering-heights" class="btn btn-primary">Play now on Itch.io</a><p style="font-size: medium;">(mobile supported)</p>
                     </div>
                 </div>
-                
-                
             </div>
             <!--Right column-->
             <div class="col embed-height">
@@ -347,8 +421,6 @@
         <!--Othello section-->
         <div class="row align-flex-center" id="Othello">
             <div class="col">
-                
-
                 <div class="card">
                     <div class="card-header">
                         Complete Game
