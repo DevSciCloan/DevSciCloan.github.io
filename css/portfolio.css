@@ -11,7 +11,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: normal;
-  background-color: #f7f7f7;
+  background-color: #777777;
   color: #1a1a1a;
 }
 
@@ -359,7 +359,7 @@ footer {
 /* Slide track */
 .slideshow-track {
   width: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /* Individual slide */
@@ -373,6 +373,7 @@ footer {
   display: flex;
   align-items: center;
   gap: 2rem;
+  justify-content: center;
 }
 
 /* Text column */
@@ -384,8 +385,10 @@ footer {
 /* Media column */
 .slide-media {
   flex: 0 0 65%;
-  min-width: 500px;
+  /* min-width: 500px; */
   aspect-ratio: 16 / 9;
+  padding-right: 1rem;
+  width: 100%;
 }
 
 /* Iframes */
@@ -554,6 +557,25 @@ footer {
   .Column_1 {
     overflow: auto;
   }
+
+  .slideshow-shell {
+    padding: 0;
+  }
+
+  .slideshow-section{
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 768px)
+{
+  .slideshow-shell {
+    padding: 2rem 0;
+  }
+
+  .slideshow-section{
+    padding: 0;
+  }
 }
 
 .Column_2 {
@@ -599,8 +621,10 @@ footer {
   background-color: #ffffff;
   margin: 2rem auto;
   padding: 2rem;
-  border-radius: 12px;
+  /* border-radius: 12px; */
   max-width: 1200px;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 
@@ -809,6 +833,7 @@ button:hover {
   p {
       font-size: 1.75vw;
   }
+  
 }
 
 @media screen and (max-width: 1311px) {
@@ -821,6 +846,9 @@ button:hover {
   {
     font-size: .8rem !important;
     width: auto;
+  }
+  .slide-content {
+    flex-direction: column;
   }
 }
 
