@@ -24,7 +24,8 @@ function MoveNextButton()
   }
 }
 
-window.onload = MoveNextButtonOnLoad();
+window.addEventListener("load", MoveNextButtonOnLoad);
+
 function MoveNextButtonOnLoad()
 {
   if (window.innerWidth < 1000)
@@ -68,7 +69,11 @@ function ToggleVideo(clickedButton,show)
 
 // This function displays the first image in the slideshow when the page loads
 var slideIndex = 1;
-showSlides(slideIndex);
+
+document.addEventListener("DOMContentLoaded", function () {
+  showSlides(slideIndex);
+});
+
 
 // This function changes the slide when the left or right arrows are clicked
 function plusSlides(n) {
