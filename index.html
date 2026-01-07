@@ -26,8 +26,10 @@
 
     <div id="navid" class="Navbar">
         <a class="menu-item active" href="#Home">Home</a>
-        <a class="menu-item" href="#Slideshow">Slideshow</a>
         <a class="menu-item" href="#About">About</a>
+        <a class="menu-item" href="#Slideshow">Tools & Systems</a>
+        <a class="menu-item" href="#games">Games</a>
+        <a class="menu-item" href="#prototypes">Prototypes</a>
         <a class="menu-item" href="#GitHub">GitHub</a>
         <!--Click event calls open and close form-->
         <a class="contact" href="#Contact">Contact</a>
@@ -37,8 +39,10 @@
     <div id="mySidenav" class="sidenav" >
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a class="menu-item active" href="#Home">Home</a>
-        <a href="#Slideshow">Slideshow</a>
         <a class="menu-item" href="#About">About</a>
+        <a href="#Slideshow">Tools & Systems</a>
+        <a href="#games">Games</a>
+        <a class="menu-item" href="#prototypes">Prototypes</a>
         <a class="menu-item" href="#GitHub">GitHub</a>
         <!--Click event calls open and close form-->
         <a class="contact" href="#Contact">Contact</a>
@@ -93,134 +97,153 @@
         
          <!--Slideshow-->
         <!-- Featured Systems Slideshow -->
-<section id="Slideshow" class="slideshow-section">
-  <div style="width: 100%; padding-left: 5rem;padding-right: 5rem; margin-bottom: 2rem;">
-            <div class="section-header">
-                <div style="margin-top: 2rem;padding: .2rem;"><h3 class="center">Featured Systems</h3></div>
-            </div>
-        </div>
-  <p class="center slideshow-subtitle">
-    Selected examples of gameplay systems, tooling, and architectural work focused on scalability and iteration speed.
-  </p>
+      <section id="Slideshow" class="slideshow-section">
+        <div style="width: 100%; padding-left: 5rem;padding-right: 5rem; margin-bottom: 2rem;">
+                  <div class="section-header">
+                      <div style="margin-top: 2rem;padding: .2rem;"><h3 class="center">Featured Tools & Systems</h3></div>
+                  </div>
+              </div>
+        <p class="center slideshow-subtitle">
+          Selected examples of gameplay systems, tooling, and architectural work focused on scalability and iteration speed.
+        </p>
 
-  <div class="slideshow-shell">
-    <button class="slide-nav prev" onclick="plusSlides(-1)">&#10094;</button>
+        <div class="slideshow-shell">
+          <button class="slide-nav prev" onclick="plusSlides(-1)">&#10094;</button>
 
-    <div class="slideshow-track">
+          <div class="slideshow-track">
 
-      <!-- Slide 1 -->
-      <div class="slide mySlides Fade">
-        <div class="slide-content">
-          <div class="slide-text">
-            <div class="card">
-              <div class="card-header">Projectile Trajectory System</div>
-              <div class="card-body">
-                <small class="card-subtitle">ScriptableObject-driven architecture</small>
-                <p>
-                  Implemented an abstract ScriptableObject architecture to decouple projectile trajectory logic and support rapid creation of new movement patterns.
-                </p>
+            <!-- Slide 1 -->
+            <div class="slide mySlides Fade">
+              <div class="slide-content">
+                <div class="slide-text">
+                  <div class="card">
+                    <div class="card-header">Projectile Trajectory System</div>
+                    <div class="card-body">
+                      <small class="card-subtitle">ScriptableObject-driven architecture</small>
+                      <p>
+                        Implemented an abstract ScriptableObject architecture to decouple projectile trajectory logic and support rapid creation of new movement patterns.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide-media">
+                  <iframe src="https://www.youtube-nocookie.com/embed/Lo4w0JCqjLg" allowfullscreen></iframe>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="slide-media">
-            <iframe src="https://www.youtube-nocookie.com/embed/Lo4w0JCqjLg" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
 
-      <!-- Slide 2 -->
-      <div class="slide mySlides Fade">
-        <div class="slide-content">
-          <div class="slide-text">
-            <div class="card">
-              <div class="card-header">Interaction System</div>
-              <div class="card-body">
-                <small class="card-subtitle">Inventory-driven interactions and animation state coordination</small>
-                <p>
-                  Designed and implemented an interaction system integrating Umotion, Odin, and IK rigging with requirement-based logic and coordinated animation states.
-                </p>
+            <!-- Slide 2 -->
+            <div class="slide mySlides Fade">
+              <div class="slide-content">
+                <div class="slide-text">
+                  <div class="card">
+                    <div class="card-header">Interaction System</div>
+                    <div class="card-body">
+                      <small class="card-subtitle">Inventory-driven interactions and animation state coordination</small>
+                      <p>
+                        Designed and implemented an interaction system integrating Umotion, Odin, and IK rigging with requirement-based logic and coordinated animation states.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide-media">
+                  <iframe src="https://www.youtube-nocookie.com/embed/fo6T6faxyMk" allowfullscreen></iframe>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="slide-media">
-            <iframe src="https://www.youtube-nocookie.com/embed/fo6T6faxyMk" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
 
-      <!-- Slide 3 -->
-      <div class="slide mySlides Fade">
-        <div class="slide-content">
-          <div class="slide-text">
-            <div class="card">
-              <div class="card-header">ScriptableObject HFSM</div>
-              <div class="card-body">
-                <p>
-                  Designed and implemented a hierarchical finite state machine using abstract ScriptableObjects and a state creation wizard, enabling scalable behavior composition and rapid state authoring.
-                </p>
+            <!-- Slide 3 -->
+            <div class="slide mySlides Fade">
+              <div class="slide-content">
+                <div class="slide-text">
+                  <div class="card">
+                    <div class="card-header">ScriptableObject HFSM</div>
+                    <div class="card-body">
+                      <p>
+                        Designed and implemented a hierarchical finite state machine using abstract ScriptableObjects and a state creation wizard, enabling scalable behavior composition and rapid state authoring.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide-media">
+                  <iframe src="https://www.youtube-nocookie.com/embed/pBUNWhisnaM" allowfullscreen></iframe>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="slide-media">
-            <iframe src="https://www.youtube-nocookie.com/embed/pBUNWhisnaM" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
 
-      <!-- Slide 4 -->
-      <div class="slide mySlides Fade">
-        <div class="slide-content">
-          <div class="slide-text">
-            <div class="card">
-              <div class="card-header">Tutorial Objective Particle Path</div>
-              <div class="card-body">
-                <p>
-                  Designed and implemented a tutorial guidance system combining Unity’s Particle System with AI Navigation to visualize walkable paths to active objectives.
-                </p>
+            <!-- Slide 4 -->
+            <div class="slide mySlides Fade">
+              <div class="slide-content">
+                <div class="slide-text">
+                  <div class="card">
+                    <div class="card-header">Tutorial Objective Particle Path</div>
+                    <div class="card-body">
+                      <p>
+                        Designed and implemented a tutorial guidance system combining Unity’s Particle System with AI Navigation to visualize walkable paths to active objectives.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide-media">
+                  <iframe src="https://www.youtube-nocookie.com/embed/yljZcqiVQ7E" allowfullscreen></iframe>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="slide-media">
-            <iframe src="https://www.youtube-nocookie.com/embed/yljZcqiVQ7E" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
 
-      <!-- Slide 5 -->
-      <div class="slide mySlides Fade">
-        <div class="slide-content">
-          <div class="slide-text">
-            <div class="card">
-              <div class="card-header">Target Indicator: Pickup & Throw</div>
-              <div class="card-body">
-                <p>
-                  Implemented a pickup and throw targeting system with visual indicators to support spatial interaction feedback.
-                </p>
+            <!-- Slide 5 -->
+            <div class="slide mySlides Fade">
+              <div class="slide-content">
+                <div class="slide-text">
+                  <div class="card">
+                    <div class="card-header">Target Indicator: Pickup & Throw</div>
+                    <div class="card-body">
+                      <p>
+                        Implemented a pickup and throw targeting system with visual indicators to support spatial interaction feedback.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide-media">
+                  <iframe src="https://www.youtube-nocookie.com/embed/lpbcBaNyjKI" allowfullscreen></iframe>
+                </div>
               </div>
             </div>
+            <!-- Slide 6 -->
+            <div class="slide mySlides Fade">
+              <div class="slide-content">
+                <div class="slide-text">
+                  <div class="card">
+                    <div class="card-header">Surface Crack Editor</div>
+                    <div class="card-body">
+                      <p>
+                        Custom 2D mesh editor to streamline the creation of surface crack meshes for use in a 3D environment. The tool enabled developers to author cracks of arbitrary size and shape, export meshes, and apply materials through a dedicated editor workflow.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide-media">
+                  <iframe src="https://www.youtube-nocookie.com/embed/5HptNqfRguA" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+
           </div>
-          <div class="slide-media">
-            <iframe src="https://www.youtube-nocookie.com/embed/lpbcBaNyjKI" allowfullscreen></iframe>
-          </div>
+
+          <button class="slide-nav next" onclick="plusSlides(1)">&#10095;</button>
         </div>
-      </div>
 
-    </div>
+        <div class="dots">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+      </section>
+      <!-- End Featured Systems Slideshow -->
 
-    <button class="slide-nav next" onclick="plusSlides(1)">&#10095;</button>
-  </div>
-
-  <div class="dots">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-    <span class="dot" onclick="currentSlide(4)"></span>
-    <span class="dot" onclick="currentSlide(5)"></span>
-  </div>
-</section>
-<!-- End Featured Systems Slideshow -->
-
-
+<section id="games">
         <div style="width: 100%; padding-left: 5rem;padding-right: 5rem; margin-bottom: 2rem;">
             <div class="section-header">
                 <div style="margin-top: 2rem;padding: .2rem;"><h3 class="center">Featured Games</h3></div>
@@ -231,13 +254,13 @@
             <!--Left column-->
             <div class="col">
                 
-
                 <div class="card" style="background-color: rgba(255, 255, 255, 0.34);">
                     <div class="card-header">
                         Complete Game
                     </div>
                     <div class="card-body" >
                     <h5 class="card-title">Robo Routes by DevSciCloan</h5>
+                    <small class="card-subtitle">Delivery was scoped to a six-day development window.</small>
                     <p class="card-text">
                         Designed and developed a WebGL educational game focused on teaching core programming concepts through interactive gameplay. Implemented modular gameplay systems, level logic, and input handling with mobile support for classroom and at-home use.
                     </p>
@@ -327,6 +350,7 @@
                 
             </div>
         </div>
+      </section>
 
         <div style="width: 100%; padding-left: 5rem;padding-right: 5rem; margin-bottom: 2rem;">
             <div class="section-header">
@@ -401,7 +425,75 @@
             </div>
         </div>
 
-        
+        <section id="prototypes">
+          <div style="width: 100%; padding-left: 5rem;padding-right: 5rem; margin-bottom: 2rem;">
+            <div class="section-header">
+                <div style="margin-top: 2rem;padding: .2rem;"><h3 class="center">Featured Prototypes</h3></div>
+            </div>
+          </div>
+          <!--Kitty Surfer-->
+          <div class="row align-flex-center prototype-row">
+            <div class="col">
+              <div class="card">
+                <div class="card-header">Kitty Surfer</div>
+                <div class="card-body">
+                  <!-- <small>Single Input (spacebar)</small> -->
+                  <p>
+                    Prototyped a single-input (spacebar) endless runner inspired by lane-based momentum mechanics, using the spacebar as the sole control. The prototype explored timing-driven movement, obstacle avoidance, and flow, with a cat surfer theme replacing traditional vehicle-based traversal.
+                  </p>
+                  <a href="https://devscicloan.itch.io/kitty-surfer" class="btn btn-primary">Play on Itch.io</a>
+                </div>
+              </div>
+            </div>
+            <div class="col embed-height">
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/L3PdNsDC6c0"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+          <!--Aquarium Sim-->
+          <div class="row align-flex-center prototype-row">
+            <div class="col">
+              <div class="card">
+                <div class="card-header">Aquarium Sim</div>
+                <div class="card-body">
+                  <!-- <small>Single Input (spacebar)</small> -->
+                  <p>
+                    Prototyped a fishing and aquarium simulation focused on collectible entities and persistent state. Implemented fish data with individual stats and naming, exploring progression, ownership, and lifecycle management between an active fishing loop and a persistent aquarium environment.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col embed-height">
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/lF5xINHD9bQ"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+          <!--Deck Builder-->
+          <div class="row align-flex-center prototype-row">
+            <div class="col">
+              <div class="card">
+                <div class="card-header">Endless Deck Builder</div>
+                <div class="card-body">
+                  <!-- <small>Single Input (spacebar)</small> -->
+                  <p>
+                    Prototyped a deck builder–inspired action selection system where player input is expressed through an ordered sequence of actions as cards. The prototype explored deterministic action resolution, input queuing, and traversal logic for navigating an endless obstacle sequence.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col embed-height">
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/HSDnOjBuPd4"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+
+        </section>
 
         <!--GitHub section-->
         <div class="row align-flex-center" id="GitHub">
