@@ -610,14 +610,17 @@ footer {
 }
 
 .embed-height {
-  height: 400px;
+  width: 100%;
+  aspect-ratio: 16 / 9;
   max-width: 100%;
   overflow: hidden;
 }
-
-.embed-height iframe {
+.embed-height iframe,
+.embed-height img {
   width: 100%;
   height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
 }
 
 .section-header 
@@ -819,6 +822,9 @@ button:hover {
   .col 
   {
     flex: none !important;
+  }
+  .embed-height {
+    aspect-ratio: 16 / 9;
   }
 }
 
