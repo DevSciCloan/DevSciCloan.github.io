@@ -26,25 +26,22 @@
 
     <div id="navid" class="Navbar">
         <a class="menu-item active" href="#Home">Home</a>
-        <a class="menu-item" href="#About">About</a>
+        <a class="menu-item" href="#about">About</a>
         <a class="menu-item" href="#Slideshow">Tools & Systems</a>
         <a class="menu-item" href="#games">Games</a>
         <a class="menu-item" href="#prototypes">Prototypes</a>
         <a class="menu-item" href="#GitHub">GitHub</a>
-        <!--Click event calls open and close form-->
         <a class="contact" href="#Contact">Contact</a>
     </div>
 
     <!--Sidenav-->
     <div id="mySidenav" class="sidenav" >
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a class="menu-item active" href="#Home">Home</a>
-        <a class="menu-item" href="#About">About</a>
+        <a class="menu-item" href="#about">About</a>
         <a href="#Slideshow">Tools & Systems</a>
         <a href="#games">Games</a>
         <a class="menu-item" href="#prototypes">Prototypes</a>
         <a class="menu-item" href="#GitHub">GitHub</a>
-        <!--Click event calls open and close form-->
         <a class="contact" href="#Contact">Contact</a>
       </div>
 
@@ -72,29 +69,30 @@
     
     <div class="container">
         <!--About section-->
-        <div style="width: 100%; padding-left: 5rem;padding-right: 5rem; margin-bottom: 2rem;">
-            <div class="section-header">
-                <div style="margin-top: 2rem;padding: .2rem;"><h3 class="center">About</h3></div>
-            </div>
-        </div>
-        <div class="row" id="About" >
-            <!--Right column-->
-            <div class="p-3">
-                
-                <p class="user-select">
-                    I specialize in building gameplay systems and editor tooling in Unity, with a focus on clean architecture, maintainability, and designer-facing workflows.<br>
+        <section id="about">
+          <div style="width: 100%; padding-left: 5rem;padding-right: 5rem; margin-bottom: 2rem;">
+              <div class="section-header">
+                  <div style="margin-top: 2rem;padding: .2rem;"><h3 class="center">About</h3></div>
+              </div>
+          </div>
+          <div class="row" id="About" >
+              <!--Right column-->
+              <div class="p-3">
+                  
+                  <p class="user-select">
+                      I specialize in building gameplay systems and editor tooling in Unity, with a focus on clean architecture, maintainability, and designer-facing workflows.<br>
 
-                    <br>
-                    Game Programmer at <a href="https://www.bitrategames.com/" target="_blank">Bitrate Games</a>.<br>
-                    Experienced with Unity (C#), Unreal Engine (Blueprints), and Godot.<br>
-                    <br>
-                    Available for remote Unity engineering roles and contract work. 
-                    <a class="contact">Contact</a> me to connect.
+                      <br>
+                      Game Programmer at <a href="https://www.bitrategames.com/" target="_blank">Bitrate Games</a>.<br>
+                      Experienced with Unity (C#), Unreal Engine (Blueprints), and Godot.<br>
+                      <br>
+                      Available for remote Unity engineering roles and contract work. 
+                      <a class="contact">Contact</a> me to connect.
 
-                </p>
-            </div>
-        </div>
-        
+                  </p>
+              </div>
+          </div>
+        </section>
          <!--Slideshow-->
         <!-- Featured Systems Slideshow -->
       <section id="Slideshow" class="slideshow-section">
@@ -529,15 +527,14 @@
                 <form action="https://formspree.io/f/xjvzaprb" method="POST" class="form-container">
                     <h1>Contact</h1>
                     <label for="name"><b>Name</b></label>
-                    <input class="Contact_Input" type="text" placeholder="Full name..." name="name" required>
+                    <input class="Contact_Input" type="text" placeholder="John Wick..." name="name" required>
                     <label for="email"><b>Your Email</b></label>
                     <input class="Contact_Input" type="email" placeholder="email@domain.com" name="email" required>
                     <br><br>
                     <label for="message" style="text-align: center;"><b>Message</b></label>
-                    <input class="Contact_Input" type="text" placeholder="Type message here..." name="message">
+                    <textarea required class="Contact_Input" id="message" name="message" rows="7" autocorrect="on" placeholder="Type message here..."></textarea>
 
-                    <button type="submit" class="btn">SUBMIT</button>
-                    <button type="button" class="btn cancel">CLOSE</button>
+                    <button type="submit" class="btn-primary">SUBMIT</button>
                 </form>
             </div>
         </div>

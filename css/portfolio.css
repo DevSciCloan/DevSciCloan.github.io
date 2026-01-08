@@ -208,7 +208,7 @@ footer {
 #mini-nav {
   position: fixed;
   display: none;
-  top:2rem;
+  top: 2rem;
   left: 2rem;
   z-index: 1090;
   border: 2px solid black;
@@ -223,17 +223,21 @@ footer {
 }
 
 .sidenav {
-  height: 100%;
+  height: 100vh;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 1100; /* above mini nav and main */
   top: 0;
   left: 0;
   background-color: #111;
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: width 0.4s ease;
   padding-top: 60px;
-  
+  pointer-events: none; /* prevents ghost clicks when closed */
+}
+
+.sidenav.open {
+  pointer-events: auto;
 }
 
 .sidenav a {
@@ -254,7 +258,10 @@ footer {
   top: 0;
   right: 25px;
   font-size: 36px;
-  margin-left: 50px;
+}
+
+section {
+  scroll-margin-top: 50px; /* match header height */
 }
 
 #main {
@@ -748,7 +755,7 @@ footer {
 }
 
 /* Input fields */
-.form-container input[type=text], input[type=email] {
+.form-container input[type=text], input[type=email], .form-container textarea {
   width: 100%; /* The input boxes completely fill the width of the form-container */
   padding: .93vw; /* Adds padding to the input boxes */
   margin: .6vw 0 .6vw 0; /* Adds space between the input boxes and the labels */
@@ -936,13 +943,14 @@ button:hover {
   }
 
   .form-container > input {
-    font-size: smaller;
+    /* font-size: smaller; */
   }
 
   .form-popup input[type=text], input[type=email] {
-    font-size: .8vw;
+    /* font-size: .8vw; */
   }
 }
+
 
 
 @media screen and (min-width: 2450px) {
@@ -961,7 +969,7 @@ button:hover {
     height: 702px;
     font-size: x-large;
   }
-  .form-container input[type=text], input[type=email] {
+  .form-container input[type=text], input[type=email], .form-container textarea {
     font-size: medium;
   }
 }
